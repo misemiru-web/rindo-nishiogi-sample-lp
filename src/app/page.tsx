@@ -64,12 +64,10 @@ export default function Home() {
         <div className={styles.foodGrid}>
           <div className={styles.foodVisual}>
             <picture className={styles.foodMain}>
+              <source media="(max-width: 767px)" srcSet={assetPath(imageAssets.food.mobile)} />
               <source media="(min-width: 768px) and (max-width: 960px)" srcSet={assetPath(imageAssets.food.mainSmall)} />
               <img src={assetPath(imageAssets.food.main)} alt="しらすを添えたパスタ料理" width="1440" height="1800" loading="lazy" />
             </picture>
-            <div className={styles.foodMobileDetail}>
-              <img src={assetPath(imageAssets.food.mainSmall)} alt="しらす、からすみ、麺の質感が見えるパスタ料理の寄りの写真" width="1448" height="1086" loading="lazy" />
-            </div>
           </div>
           <div className={styles.foodCopy}><SectionHeading label="FOOD" title="料理を楽しむ。" id="food-title" /><p className="lead">炭焼き、魚料理、そして季節の一品。皿ごとの表情を、酒とともにお楽しみください。</p></div>
         </div>
@@ -105,7 +103,6 @@ export default function Home() {
         <div className={styles.seasonalLayout}>
           <div className={styles.seasonalCopy}><SectionHeading label="SEASONAL" title={<><span className={styles.seasonalTitleLine}>仕入れで変わる、</span><span className={styles.seasonalTitleLine}>その日の一皿。</span></>} id="seasonal-title" /><p>訪れるたびに出会う、季節と仕入れの表情。今日の内容は公式Instagramでご覧ください。</p><ExternalLink href={siteData.links.instagram} className="text-link">今日の内容をInstagramで見る</ExternalLink></div>
           <ResponsiveImage className={styles.seasonalMain} src={imageAssets.seasonal.main} small={imageAssets.seasonal.mainSmall} alt="レモンと香草を添えた季節の魚介料理" width={1254} height={1254} />
-          <img className={styles.seasonalDetail} src={assetPath(imageAssets.seasonal.detail)} alt="ハーブとライムを添えた季節の一皿" width="1200" height="1500" loading="lazy" />
         </div>
         <img className={styles.seasonalDecoration} src={assetPath("/images/decor/botanical/03-delicate-floral-sprig.webp")} width="1254" height="1254" alt="" aria-hidden="true" loading="lazy" />
       </section>

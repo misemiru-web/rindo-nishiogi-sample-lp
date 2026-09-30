@@ -44,6 +44,7 @@ export const imageAssets = {
   food: {
     main: "/images/food/03_food_whitebait-pasta.webp",
     mainSmall: "/images/food/03_food_whitebait-pasta-detail.webp",
+    mobile: "/images/food/rindo_food_pasta_centered.webp",
     detail: "/images/food/03_food_chicken-dish.webp",
   },
   menu: [
@@ -56,7 +57,6 @@ export const imageAssets = {
   seasonal: {
     main: "/images/seasonal/05_seasonal_lemon-seafood-bowl-centered.webp",
     mainSmall: "/images/seasonal/05_seasonal_lemon-seafood-bowl-centered.webp",
-    detail: "/images/seasonal/05_seasonal_specialty-dish-02.webp",
     vegetable: "/images/seasonal/05_seasonal_vegetable-dish.webp",
   },
   drinks: {
